@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+//Image Background
+https://www.freepik.com/free-vector/blue-web-support-help-page-template-design_9504928.htm#fromView=keyword&page=1&position=25&uuid=642f019b-b337-47ee-aa6d-83416d16536c&query=Quiz+Background
+[Accessed on 18 May 2025]
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    <!-- For my button to be unique. I made to make it invisible -->
+    <Button
+        android:id="@+id/startBtn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="155dp"
+        android:layout_height="330dp"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.992"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:text="QUIZ HIST"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="212dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="436dp"
+        android:hint="Welcome to Quiz Hist!!! Export the past with fun facts about South Africa.  To Start click on the question marks below."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
